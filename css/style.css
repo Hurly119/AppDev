@@ -1,0 +1,360 @@
+body{
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.blue{
+  color:#2419c2;
+}
+
+/* <!---START of Home----> */
+.homeStart{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+
+}
+.homeControl{
+  clip: rect(0, auto,auto,0);
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.imagemove{
+  opacity: 0;
+  background-image: url("../images/speedbendhd2.png");
+  position: absolute;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+  z-index: -1;
+  animation-name: Show;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Details{
+  opacity:0;
+  color:white;
+  position: absolute;
+  z-index: 1;
+  top: 38%;
+  width: 100%;
+  max-width: 100%;
+  text-shadow: .1rem .1rem .5rem black;
+  font-family: "Alatsi",sans-serif;
+  animation-name: Show;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Details div .btn{
+  margin-right: 1rem;
+  border-color: #011291;
+  border-width: 3px;
+  text-transform: uppercase;
+}
+.Details >div{
+  opacity: 0;
+  animation-name: Show;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.btn-primary{
+  background-color: #011291;
+}
+.btn-primary:hover{
+  background-color: #000845;
+  border-color: #000845
+}
+.btn-outline-primary{
+  color:#fff;
+}
+
+
+
+
+/* KEYFRAMES */
+@keyframes Show {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+/* END OF KEYFRAMES */
+/* <!---END of Moving----> */
+/* <!---END of Home----> */
+
+/* <!---START of AboutMe----> */
+.AboutMe div > img{
+  border-radius: 50%;
+}
+.AboutMe  .row{
+  margin-bottom: 1rem;
+}
+/* <!---END of AboutMe----> */
+
+.imagez img{
+  width:100%;
+}
+.imagez{
+  text-align: center;
+}
+
+/* <!---START of Projects----> */
+
+.marginz{
+  margin-bottom: 3rem;
+}
+.landing{
+  background-image: url("../images/projectsbg3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  height: 50vh;
+}
+.caption{
+  transform: translateY(150%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.bgoverlay{
+  height:100%;
+  background-size: cover;
+  background: rgba(10, 10, 10, 0.7);
+}
+.intro{
+  padding-top: 50px;
+  height:50vh;
+  width:100%;
+  color:white;
+}
+.imageP img{
+  border-radius: 50%;
+  width:13%;
+  max-width: 13%;
+}
+
+.introText h3, .introText h5, .imageP{
+  padding-bottom: 10px;
+}
+
+.introText h5{
+  line-height: 20px;
+}
+
+.projintro{
+  height: 50vh;
+  background-color: white;
+  color:white;
+  padding-top: 50px;
+  background-image: url("../images/randombnw.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.projText{
+  transform: translateY(50%);
+}
+hr.white{
+  border: 1px solid white;
+  width: 15%;
+}
+
+/* <!---Start ListProj---> */
+/* <!---SIDEBAR---> */
+.sidebar{
+  position: sticky!important;
+  position: -webkit-sticky!important;
+  padding-top: 75px;
+  padding-right: 0;
+  top:0;
+  width:19%;
+  max-width: 19%;
+  float: left;
+}
+
+.nav-pills > li > a, .navbar-brand{
+  color:rgba(10,10,10,1);
+}
+.navbar-brand{
+  font-size: 30px;
+  font-weight: bold;
+  color:rgba(20,20,20,1);
+}
+.navbar-brand:hover{
+  text-decoration: underline;
+  color:rgba(20,20,20,1);
+}
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active, .nav-pills .nav-link:focus{
+  color:white!important;
+  background-color: black!important;
+  transition: all 1s ease-in-out;
+}
+.nav-item, .navbar-brand{
+  padding: 5px 5px;
+  text-shadow: .1rem .1rem .5rem white;
+  transition: all 1s ease-in-out;
+}
+
+/* <!--- END SIDEBAR---> */
+
+#proj0,#proj1,#projx{
+  height: 150vh;
+  width:100%;
+}
+
+.projslist{
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  color:white;
+}
+
+/* <!--- PROJECT0---> */
+#proj0{
+  background-color: white;
+}
+.Project0{
+  padding-top: 75px;
+}
+.projImage{
+
+}
+/* <!--- END PROJECT0---> */
+/* <!--- PROJECT1---> */
+#proj1{
+  background-color: black;
+}
+/* <!--- END PROJECT0---> */
+/* <!--- PROJECTx---> */
+#projx{
+  background-color: white;
+}
+
+/* <!--- END PROJECT0---> */
+
+
+
+/* <!---End ListProj---> */
+/* <!---END of Projects----> */
+
+/* <!---START of Contacts----> */
+.landingContacts{
+  background-image: url("../images/contactbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  height: 50vh;
+}
+.captionContacts{
+  transform: translateY(150%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.bgoverlayContacts{
+  height:100%;
+  background-size: cover;
+  background: rgba(31, 31, 31, 0.4);
+}
+
+.introContacts{
+  height:50vh;
+  padding-bottom: 500px;
+}
+/* <!--- ContactList---> */
+.contact{
+  height: 100%;
+  padding: 20px 10px;
+}
+.contactInfo,.contactDetails{
+  height: 100vh;
+}
+.contactInfo{
+  background-color: blue;
+}
+.contactDetails{
+  background-color: white;
+  max-height: 100%;
+  overflow-y: scroll;
+  /* height:100%;
+  max-height: 100%; */
+}
+.captionContactsLs{
+  transform: translateY(500%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.fire{
+  background-image: url("../images/firebg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.fireRed{
+  background-color: #470000;
+  color: #b35050;
+  height:100vh;
+}
+
+/* <!--- END ContactList---> */
+/* <!---END of Contacts----> */
+
+/* <!---START of Footer----> */
+footer{
+  background-color: black;
+  color:white;
+  margin-bottom: 0!important;
+  margin-top:0!important;
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+footer img{
+  height: 30%;
+}
+
+footer a{
+  font-size: 200%;
+  color: white;
+}
+footer hr{
+  color:white;
+}
+/* <!---END of Footer----> */
+
+/* <!---START of Media Queries----> */
+@media (max-width: 768px){
+    .Details h1{
+      font-size: 1.8rem!important;
+    }
+    .Details p{
+      font-size: 1rem!important;
+    }
+    .Details div >a{
+      font-size: 0.8rem!important;
+    }
+    .imagez img{
+      max-width: 50%;
+    }
+}
