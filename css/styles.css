@@ -2,6 +2,7 @@ body{
   color:white;
   background-color: white;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 #About,#Projects,#Contacts,#Story,#Landing{
   padding: 0;
@@ -11,6 +12,7 @@ body{
   bottom:0;
   left:0;
 }
+
 .wow {
 visibility: visible !important;
 }
@@ -25,6 +27,10 @@ html{
   /* width:100%; */
   height:100vh;
   width: 100%;
+}
+
+#welcomeText{
+  transition: 2s ease;
 }
 .landingBGOverlay2{
   position: absolute;
@@ -151,13 +157,39 @@ html{
   transform: translate(-50%, -50%)
 }
 
+
 .AboutDetails{
   position: absolute;
   height:100%;
   width:100%;
   background-color: black;
+  z-index: 1;
+  opacity: 0;
+}
+.AboutData{
+  height: 100%;
+  width: 100%;
+  text-shadow: 3px 3px 3px  #8a0303;
+  font-size: 4rem;
+  font-family: "Shadows Into Light", cursive;
 }
 
+.DetailsHeader{
+  text-shadow: 3px 3px 3px  #8a0303;
+  font-family: "Creepster", cursive;
+  font-size: 4rem;
+}
+
+.question,.answer{
+  font-size: 1.5rem;
+}
+.question{
+  font-family: "Shadows Into Light", cursive;
+}
+.answer{
+  font-family: "Creepster", cursive;
+  text-shadow: 2px 2px 2px red;
+}
 
 /* Projects */
 #Projects{
@@ -205,6 +237,14 @@ html{
   height:100%;
   width:100%;
   background-color: black;
+}
+.ProjectText{
+  font-size: 8rem;
+  text-shadow: 3px 3px 3px red;
+  font-family: "Shadows Into Light",cursive;
+}
+.ProjectText span{
+  font-family: "Creepster", cursive;
 }
 
 /* Contacts */
@@ -285,6 +325,7 @@ html{
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
 
 .StoryOverlay h1{
@@ -306,6 +347,14 @@ html{
 }
 
 /* Carousel */
+.StoryDetails .wow{
+  opacity:0;
+}
+
+.custom-caption{
+    font-size: 2rem;
+  }
+/* }
 .item.next .carousel-caption {
     opacity: 0;
 }
@@ -315,6 +364,15 @@ html{
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
 }
+.carousel-caption h2{
+  padding-top: 30px;
+}
+.carousel-caption h4{
+  padding-top:70px;
+}
+.carousel-caption p{
+  padding-top:100px;
+} */
 
 /* Animations */
 @keyframes show {
@@ -325,6 +383,7 @@ html{
     opacity: 1;
   }
 }
+
 
 @keyframes backgroundChange {
     0%{
@@ -342,4 +401,26 @@ html{
     100%{
       background-color: rgba(0, 0, 0, 1);
     }
+}
+
+
+@media only screen and (min-device-width: 780px){
+
+#welcomeText{
+  font-size: 3rem;
+}
+
+}
+/* tablet */
+@media only screen and (max-device-width: 768px){
+
+
+
+}
+
+/* iPhone */
+@media only screen and (max-device-width: 480px){
+
+
+
 }
