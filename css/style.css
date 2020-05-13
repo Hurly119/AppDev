@@ -20,40 +20,47 @@ html{
 
 }
 .navigationer{
+  /* opacity: 0; */
   width: 100%;
   max-width: 100%;
   font-family: "Arial", sans-serif;
-  font-size:20px;
+  font-size:1.5rem;
   font-weight: 400;
   padding: 0 15px;
   position: absolute;
   float: right;
+  transition: 1s ease;
+  /* animation-name: Show;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards; */
 }
 
 .home .navigationer{
   text-shadow: .1rem .1rem .3rem black;
 }
-.navaro a, .navaro a:hover, .navaro:active, .navaro{
+.navaro a, .navaro:active, .navaro{
   color:#05b0ff;
-    padding: 0 10px;
+  padding: 0 10px;
 }
+
 
 .homeControl{
   position: absolute;
-  /* background-image: url("../images/bg.png"); */
+  background-color: rgba(15,15,15,1);
   background-attachment: fixed;
+  background-size:cover;
   background-position: center center;
   background-repeat: no-repeat;
   top: 0;
   left:0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15,15,15,1);
 }
 
 
 .imagemove{
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   background-image: url("../images/speedwagonfull4.png");
   top: 0;
@@ -68,7 +75,7 @@ html{
   background-attachment: fixed;
   background-repeat: no-repeat;
   animation-name: Show;
-  animation-delay: 0s;
+  animation-delay: 2s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
@@ -78,7 +85,7 @@ html{
 
 
 .Details{
-  opacity:1;
+  opacity:0;
   color:#05b0ff;
   position: absolute;
   font-family: 'Girassol', cursive;
@@ -90,19 +97,21 @@ html{
   text-shadow: .1rem .1rem .5rem black;
   /* font-family: "Alatsi",sans-serif; */
   animation-name: Show;
-  animation-delay: 2s;
+  animation-delay: 4s;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .Details h1{
-  font-size: 3rem;
+  font-size: 3.6rem;
   font-weight: 500;
+  transition: 1s ease;
 }
 .Details p{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Alatsi",sans-serif;
   color:white;
+  transition: 1s ease;
 }
 /*
 .Details div .btn{
@@ -140,6 +149,15 @@ html{
   }
   100%{
     opacity:1;
+  }
+}
+
+@keyframes FontSizePlus{
+  0%{
+    font-size: 20px;
+  }
+  100%{
+    font-size: 25px;
   }
 }
 /* END OF KEYFRAMES */
@@ -347,7 +365,7 @@ hr.white{
 }
 
 /* <!---About---> */
-.AboutMe  .navaro a, .AboutMe  .navaro a:hover, .AboutMe .navaro{
+.AboutMe  .navaro a, .AboutMe .navaro{
   color:white;
 }
 
@@ -357,7 +375,7 @@ hr.white{
   text-shadow: .1rem .1rem .5rem black;
 }
 .AboutMe .navigationer{
-  transform: translateY(1250%)!important;
+  transform: translateY(750%)!important;
 }
 
 .AboutMe{
@@ -433,7 +451,7 @@ hr.underlinez{
 .pseudohead{
   font-size: 1.5rem;
   font-weight: 500;
-    text-shadow: .1rem .1rem .8rem #05b0ff;
+  text-shadow: .1rem .1rem .8rem #05b0ff;
 }
 
 .LabelDetails{
@@ -494,7 +512,7 @@ hr.underlinez{
 /* <!--- END About---> */
 
 /* <!--- Start Projects---> */
-.Projecto  .navaro a, .Projecto  .navaro a:hover, .Projecto .navaro{
+.Projecto  .navaro a, .Projecto .navaro{
   color:black;
   text-shadow: .1rem .1rem .3rem #05b0ff;
 }
@@ -505,7 +523,7 @@ hr.underlinez{
   text-shadow: .1rem .1rem .5rem white;
 }
 .Projecto .navigationer{
-  transform: translateY(1250%)!important;
+  transform: translateY(750%)!important;
 }
 .Projecto{
   background-color: #fff;
@@ -577,7 +595,7 @@ hr.underlinez{
 
 /* <!---start of Contacts----> */
 
-.Contacto  .navaro a, .Contacto  .navaro a:hover, .Contacto .navaro{
+.Contacto  .navaro a, .Contacto .navaro{
   color:#05b0ff;
 }
 
@@ -587,7 +605,7 @@ hr.underlinez{
   text-shadow: .1rem .1rem .5rem #05b0ff;
 }
 .Contacto .navigationer{
-  transform: translateY(1250%)!important;
+  transform: translateY(750%)!important;
 }
 .Contacto{
   background-color: #000;
@@ -693,7 +711,7 @@ footer a{
 /* <!---END of Footer----> */
 
 /* <!---START of Media Queries----> */
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     .Details h1{
       font-size: 2rem!important;
     }
@@ -704,4 +722,50 @@ footer a{
     .imagez img{
       max-width: 50%;
     }
+} */
+
+
+
+/* tablet */
+@media only screen and (max-device-width: 768px){
+
+  .Details h1{
+    font-size: 5rem!important;
+  }
+  .Details p{
+    font-size: 2.5rem!important;
+  }
+
+
+
+  .home > .navigationer{
+    font-size:2rem;
+  }
+
+  .imagez img{
+    max-width: 50%;
+  }
+
+
+}
+
+/* iPhone */
+@media only screen and (max-device-width: 480px){
+
+  .Details h1{
+    font-size: 6.5rem!important;
+  }
+
+  .Details p{
+    font-size: 3.5rem!important;
+  }
+  .Details{
+    top: 30%;
+  }
+
+  .home > .navigationer{
+    font-size:3rem;
+  }
+
+
 }
