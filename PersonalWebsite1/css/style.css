@@ -1,0 +1,771 @@
+body{
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.blue{
+  transform: translateY();
+}
+
+/* <!---START of Home----> */
+.homeStart{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  padding-bottom: 25px;
+
+}
+.navigationer{
+  /* opacity: 0; */
+  width: 100%;
+  max-width: 100%;
+  font-family: "Arial", sans-serif;
+  font-size:1.5rem;
+  font-weight: 400;
+  padding: 0 15px;
+  position: absolute;
+  float: right;
+  transition: 1s ease;
+  /* animation-name: Show;
+  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-fill-mode: forwards; */
+}
+
+.home .navigationer{
+  text-shadow: .1rem .1rem .3rem black;
+}
+.navaro a, .navaro:active, .navaro{
+  color:#05b0ff;
+  padding: 0 10px;
+}
+
+
+.homeControl{
+  position: absolute;
+  background-color: rgba(15,15,15,1);
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.imagemove{
+  opacity: 0;
+  position: absolute;
+  background-image: url("../images/speedwagonfull4.png");
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  height:100%;
+  max-height: 100%;
+  z-index: 1000000;
+  background-size: contain;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  animation-name: Show;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+
+.Details{
+  opacity:0;
+  color:#05b0ff;
+  position: absolute;
+  font-family: 'Girassol', cursive;
+  font-size: 3rem;
+  z-index: 1;
+  top: 38%;
+  width: 100%;
+  max-width: 100%;
+  text-shadow: .1rem .1rem .5rem black;
+  /* font-family: "Alatsi",sans-serif; */
+  animation-name: Show;
+  animation-delay: 4s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.Details h1{
+  font-size: 3.6rem;
+  font-weight: 500;
+  transition: 1s ease;
+}
+.Details p{
+  font-size: 1.8rem;
+  font-family: "Alatsi",sans-serif;
+  color:white;
+  transition: 1s ease;
+}
+/*
+.Details div .btn{
+  margin-right: 1rem;
+  border-color: #011291;
+  border-width: 3px;
+  text-transform: uppercase;
+}
+.Details >div{
+  opacity: 0;
+  animation-name: Show;
+  animation-delay: 6s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.btn-primary{
+  background-color: #011291;
+}
+.btn-primary:hover{
+  background-color: #000845;
+  border-color: #000845
+}
+.btn-outline-primary{
+  color:#fff;
+} */
+
+
+
+
+/* KEYFRAMES */
+@keyframes Show {
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes FontSizePlus{
+  0%{
+    font-size: 20px;
+  }
+  100%{
+    font-size: 25px;
+  }
+}
+/* END OF KEYFRAMES */
+/* <!---END of Moving----> */
+/* <!---END of Home----> */
+
+/* <!---START of AboutMe----> */
+.AboutMe div > img{
+  border-radius: 50%;
+}
+.AboutMe  .row{
+  margin-bottom: 1rem;
+}
+/* <!---END of AboutMe----> */
+
+.imagez img{
+  width:100%;
+}
+.imagez{
+  text-align: center;
+}
+
+/* <!---START of Projects----> */
+
+.marginz{
+  margin-bottom: 3rem;
+}
+.landing{
+  background-image: url("../images/projectsbg3.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  height: 50vh;
+}
+.caption{
+  transform: translateY(150%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.bgoverlay{
+  height:100%;
+  background-size: cover;
+  background: rgba(10, 10, 10, 0.7);
+}
+.intro{
+  padding-top: 50px;
+  height:50vh;
+  width:100%;
+  color:white;
+}
+.imageP img{
+  border-radius: 50%;
+  width:13%;
+  max-width: 13%;
+}
+
+.introText h3, .introText h5, .imageP{
+  padding-bottom: 10px;
+}
+
+.introText h5{
+  line-height: 20px;
+}
+
+.projintro{
+  height: 50vh;
+  background-color: white;
+  color:white;
+  padding-top: 50px;
+  background-image: url("../images/randombnw.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.projText{
+  transform: translateY(50%);
+}
+hr.white{
+  border: 1px solid white;
+  width: 15%;
+}
+
+/* <!---Start ListProj---> */
+/* <!---SIDEBAR---> */
+.sidebar{
+  position: sticky!important;
+  position: -webkit-sticky!important;
+  padding-top: 75px;
+  padding-right: 0;
+  top:0;
+  width:19%;
+  max-width: 19%;
+  float: left;
+}
+
+.nav-pills > li > a, .navbar-brand{
+  color:rgba(10,10,10,1);
+}
+.navbar-brand{
+  font-size: 30px;
+  font-weight: bold;
+  color:rgba(20,20,20,1);
+}
+.navbar-brand:hover{
+  text-decoration: underline;
+  color:rgba(20,20,20,1);
+}
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active, .nav-pills .nav-link:focus{
+  color:white!important;
+  background-color: black!important;
+  transition: all 1s ease-in-out;
+}
+.nav-item, .navbar-brand{
+  padding: 5px 5px;
+  text-shadow: .1rem .1rem .5rem white;
+  transition: all 1s ease-in-out;
+}
+
+/* <!--- END SIDEBAR---> */
+
+#proj0,#proj1,#projx{
+  height: 150vh;
+  width:100%;
+}
+
+.projslist{
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  color:white;
+}
+
+/* <!--- PROJECT0---> */
+#proj0{
+  background-color: white;
+}
+.Project0{
+  padding-top: 75px;
+}
+.projImage{
+
+}
+/* <!--- END PROJECT0---> */
+/* <!--- PROJECT1---> */
+#proj1{
+  background-color: black;
+}
+/* <!--- END PROJECT0---> */
+/* <!--- PROJECTx---> */
+#projx{
+  background-color: white;
+}
+
+/* <!--- END PROJECT0---> */
+
+
+
+/* <!---End ListProj---> */
+/* <!---END of Projects----> */
+
+/* <!---START of Contacts----> */
+.landingContacts{
+  background-image: url("../images/contactbg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  height: 50vh;
+}
+.captionContacts{
+  transform: translateY(150%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.bgoverlayContacts{
+  height:100%;
+  background-size: cover;
+  background: rgba(31, 31, 31, 0.4);
+}
+
+.introContacts{
+  height:50vh;
+  padding-bottom: 500px;
+}
+/* <!--- ContactList---> */
+.contact{
+  height: 100%;
+}
+.contactInfo,.contactDetails{
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.contactInfo{
+  background-color: blue;
+}
+.contactDetails{
+  background-color: white;
+  max-height: 100%;
+  overflow-y: scroll;
+  /* height:100%;
+  max-height: 100%; */
+}
+
+/* <!---About---> */
+.AboutMe  .navaro a, .AboutMe .navaro{
+  color:white;
+}
+
+.AboutMe .navaro a:hover{
+  text-decoration: underline;
+  color: black;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.AboutMe .navigationer{
+  transform: translateY(750%)!important;
+}
+
+.AboutMe{
+  background-color: #05b0ff;
+  color: white;
+  text-shadow: .1rem .1rem .5rem black;
+  /* background-image: url("../images/speedgang.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.AboutCaption{
+font-family: 'Dancing Script', cursive;
+  font-size: 7rem;
+  font-weight: 500;
+  color:white;
+  text-shadow: .1rem .1rem .3rem black;
+  transform: translateY(100%);
+  max-width: 100%;
+}
+
+.xD{
+  height: 100vh;
+  overflow-x: hidden;
+}
+.AboutLogo, .TextLogo{
+  width:100%;
+  max-width: 100%;
+  color:black;
+  text-shadow: .1rem .1rem .3rem #05b0ff;
+}
+.introTextLogo h3 , .introTextLogo h5, .introTextLogo p{
+  padding-right: 6.5rem;
+  text-align: center;
+}
+
+.AboutLogo img{
+  width:100%;
+  max-width: 100%;
+  border-radius: 50%!important;
+}
+.introAbout{
+  padding-top: 10px;
+  padding-left: 40px;
+}
+hr.underlinez{
+  margin-left:1rem;
+  border: 1px solid black;
+  box-shadow: .1rem .1rem .3rem #05b0ff;
+  width:60%;
+}
+
+
+.Detalye{
+  padding-left: 50px;
+  padding-top: 2rem;
+  color:black;
+}
+.DetalyeHead h5{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: .1rem .1rem .8rem #05b0ff;
+}
+.Detalye hr.underlinez{
+  width:60%;
+}
+
+.DetalyeInfo{
+  padding-top: 0.8rem;
+  padding-left: 2.7rem;
+}
+
+.pseudohead{
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-shadow: .1rem .1rem .8rem #05b0ff;
+}
+
+.LabelDetails{
+  padding-top: 0.3rem;
+}
+.LabelDetails p{
+  font-size: 1.2rem;
+  text-shadow: .1rem .1rem .8rem gray;
+}
+
+.funSchool{
+  position: relative;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.Education{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.Education hr.underlinez{
+  width:100%;
+}
+
+.schoolBg{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  opacity: 0;
+  background-image: url("../images/schoolBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: All 0.5s ease-in-out;
+}
+
+.schoolCap{
+  opacity: 0;
+  color: black;
+  text-shadow: .1rem .1rem .8rem #05b0ff;
+  font-size: 50px;
+  position: absolute;
+  width:100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition-delay: 3s;
+  transition: All 6s ease-in-out;
+}
+
+.funSchool:hover .schoolBg, .funSchool:hover .schoolCap{
+  opacity: 1;
+}
+
+/* <!--- END About---> */
+
+/* <!--- Start Projects---> */
+.Projecto  .navaro a, .Projecto .navaro{
+  color:black;
+  text-shadow: .1rem .1rem .3rem #05b0ff;
+}
+
+.Projecto  .navaro a:hover{
+  text-decoration: underline;
+  color: #05b0ff;
+  text-shadow: .1rem .1rem .5rem white;
+}
+.Projecto .navigationer{
+  transform: translateY(750%)!important;
+}
+.Projecto{
+  background-color: #fff;
+  color: black;
+  /* background-image: url("../images/speedhatoff.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ProjectoCaption{
+  font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    font-weight: 500;
+    color:black;
+    text-shadow: .1rem .1rem .3rem #05b0ff;
+    transform: translateY(100%);
+    max-width: 100%;
+}
+
+.projImg,.projImg2{
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.projImg{
+    background-image: url("../images/firstWeb.png");
+}
+.projImg2{
+    background-image: url("../images/Project2.jpg");
+}
+.projImgOverlay{
+  position: absolute;
+  background-color: black;
+  opacity:0;
+  width:100%;
+  height:100%;
+  transition: 0.5s ease-in-out;
+}
+.projImg:hover .projImgOverlay, .projImg2:hover .projImgOverlay{
+  opacity: 0.8;
+}
+.projImgCap,.projImgCap2{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.projImgCap a, .projImgCap2 a{
+  color:white;
+  font-size: 1.5rem;
+
+}
+
+.projImgCap a:hover, .projImgCap2 a:hover{
+    background-color: blue;
+    color:black;
+    transition: All 0.5s ease-in-out;
+}
+/* <!--- END Projects---> */
+
+/* <!---start of Contacts----> */
+
+.Contacto  .navaro a, .Contacto .navaro{
+  color:#05b0ff;
+}
+
+.Contacto  .navaro a:hover{
+  text-decoration: underline;
+  color: white;
+  text-shadow: .1rem .1rem .5rem #05b0ff;
+}
+.Contacto .navigationer{
+  transform: translateY(750%)!important;
+}
+.Contacto{
+  background-color: #000;
+  color: #05b0ff;
+  text-shadow: .1rem .1rem .5rem white;
+  /* background-image: url("../images/spidwugun.png"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ContactoCaption{
+  font-family: 'Dancing Script', cursive;
+    font-size: 7rem;
+    font-weight: 500;
+    color:#05b0ff;
+    transform: translateY(100%);
+    max-width: 100%;
+    text-shadow: .1rem .1rem .3rem white;
+}
+
+.HowContact{
+  overflow-x: hidden;
+  color:black;
+  text-shadow: .1rem .1rem .3rem gray;
+  height: 100vh;
+}
+
+.AboutLogo, .TextLogo{
+  width:100%;
+  max-width: 100%;
+  color:black;
+  text-shadow: .1rem .1rem .3rem #05b0ff;
+}
+.introTextLogo h3 , .introTextLogo h5, .introTextLogo p{
+  padding-right: 6.5rem;
+  text-align: center;
+}
+
+.AboutLogo img{
+  width:100%;
+  max-width: 100%;
+  border-radius: 50%!important;
+}
+.HowContact .introAbout{
+  padding-top: 1rem;
+  padding-left: 40px;
+}
+.HowContact .socialMed{
+  font-size: 300%;
+  text-align: center;
+}
+hr.underlinez{
+  margin-left:1rem;
+  border: 1px solid black;
+  box-shadow: .1rem .1rem .3rem #05b0ff;
+  width:60%;
+}
+
+/* <!---END of Contacts----> */
+/* <!--- END PROJECTS---> */
+/* .captionContactsLs{
+  transform: translateY(500%);
+  width: 100%;
+  color:white;
+  text-shadow: .1rem .1rem .5rem black;
+}
+.fire{
+  background-image: url("../images/firebg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+.fireRed{
+  background-color: #470000;
+  color: #b35050;
+  height:100vh;
+} */
+
+/* <!--- END ContactList---> */
+/* <!---END of Contacts----> */
+.testDiv{
+  height:100vh;
+}
+/* <!---START of Footer----> */
+footer{
+  background-color: black;
+  color:white;
+  margin-bottom: 0!important;
+  margin-top:0!important;
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+footer img{
+  height: 30%;
+}
+
+footer a{
+  font-size: 200%;
+  color: white;
+}
+
+/* <!---END of Footer----> */
+
+/* <!---START of Media Queries----> */
+/* @media (max-width: 768px){
+    .Details h1{
+      font-size: 2rem!important;
+    }
+    .Details p{
+      font-size: 1.3rem!important;
+    }
+
+    .imagez img{
+      max-width: 50%;
+    }
+} */
+
+
+
+/* tablet */
+@media only screen and (max-device-width: 768px){
+
+  .Details h1{
+    font-size: 5rem!important;
+  }
+  .Details p{
+    font-size: 2.5rem!important;
+  }
+
+
+
+  .home > .navigationer{
+    font-size:2rem;
+  }
+
+  .imagez img{
+    max-width: 50%;
+  }
+
+
+}
+
+/* iPhone */
+@media only screen and (max-device-width: 480px){
+
+  .Details h1{
+    font-size: 6.5rem!important;
+  }
+
+  .Details p{
+    font-size: 3.5rem!important;
+  }
+  .Details{
+    top: 30%;
+  }
+
+  .home > .navigationer{
+    font-size:3rem;
+  }
+
+
+}
